@@ -72,7 +72,7 @@ export async function onRequestPost({ request, env }) {
           { role: 'system', content: system },
           { role: 'user', content: user }
         ],
-        max_tokens: 420
+        max_tokens: 1200
       });
       const text = result.response || result.text || JSON.stringify(result);
       const parsed = extractJson(text);
